@@ -18,6 +18,12 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: "Life Stories",
   description: "A digital life stories book to share memories and wisdom with those you love",
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+  },
 };
 
 export default function RootLayout({
