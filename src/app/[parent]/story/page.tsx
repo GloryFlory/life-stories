@@ -38,7 +38,7 @@ export default function StoryPage({ params }: StoryPageProps) {
   const [bookPages, setBookPages] = useState<BookPage[]>([]);
   const [currentPage, setCurrentPage] = useState(0);
   const isMom = parent === 'mom';
-  const name = isMom ? "Mom" : "Dad";
+  const name = t(parent); // Translate 'mom' or 'dad'
 
   useEffect(() => {
     // Build the book pages

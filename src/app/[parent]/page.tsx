@@ -24,7 +24,7 @@ export default function ParentBook({ params }: ParentBookProps) {
   const [isFullyComplete, setIsFullyComplete] = useState(false);
   
   const isMom = parent === 'mom';
-  const name = isMom ? "Mom" : "Dad";
+  const name = t(parent); // Translate 'mom' or 'dad'
   const firstChapter = chapters[0];
   const welcomeText = isMom ? t('welcomeMom') : t('welcomeDad');
   const emoji = isMom ? '🧡' : '💙';

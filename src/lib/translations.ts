@@ -2,6 +2,10 @@ export type Language = 'en' | 'de' | 'it' | 'no';
 
 export const translations = {
   en: {
+    // Parent names
+    mom: 'Mom',
+    dad: 'Dad',
+    
     // Home page
     appTitle: 'Life Stories',
     homeSubtitle: 'A place to share the stories that shaped your life',
@@ -103,6 +107,10 @@ export const translations = {
     clickLinkToSignIn: 'Click the link in your email to sign in securely.',
   },
   de: {
+    // Parent names
+    mom: 'Mama',
+    dad: 'Papa',
+    
     // Home page
     appTitle: 'Lebensgeschichten',
     homeSubtitle: 'Ein Ort, um die Geschichten zu teilen, die dein Leben geprägt haben',
@@ -204,6 +212,10 @@ export const translations = {
     clickLinkToSignIn: 'Klicke auf den Link in deiner E-Mail, um dich sicher anzumelden.',
   },
   it: {
+    // Parent names
+    mom: 'Mamma',
+    dad: 'Papà',
+    
     // Home page
     appTitle: 'Storie di Vita',
     homeSubtitle: 'Un luogo per condividere le storie che hanno segnato la tua vita',
@@ -305,6 +317,10 @@ export const translations = {
     clickLinkToSignIn: 'Clicca sul link nella tua email per accedere in modo sicuro.',
   },
   no: {
+    // Parent names
+    mom: 'Mamma',
+    dad: 'Pappa',
+    
     // Home page
     appTitle: 'Livshistorier',
     homeSubtitle: 'Et sted å dele historiene som formet livet ditt',

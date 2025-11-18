@@ -26,7 +26,7 @@ export default function ChapterPage({ params }: ChapterPageProps) {
   const tf = (key: string, params: Record<string, string | number>) => formatTranslation(language, key, params);
   
   const isMom = parent === 'mom';
-  const parentName = isMom ? 'Mom' : 'Dad';
+  const parentName = t(parent); // Translate 'mom' or 'dad'
 
   const chapter = chapters.find((c) => c.id === chapterId);
   const questions = getQuestions(language, chapterId);
