@@ -278,7 +278,8 @@ export default function BookPage({ params }: { params: Promise<{ parent: string 
             parentName: displayParentName,
             language,
             pageText: t('page'),
-            storyText: t('story')
+            storyText: t('story'),
+            forPDF: true
           })
         );
         
@@ -335,59 +336,30 @@ export default function BookPage({ params }: { params: Promise<{ parent: string 
   return (
     <div className="life-story-app">
       <header className="top-bar">
-        <div className="top-bar-content">
-          <Link href={`/${parent}`} className="logo">
-            ← {t('backToChapters')}
-          </Link>
-          <div className="book-title">
-            {parentName.charAt(0).toUpperCase() + parentName.slice(1)}{t('bookTitle')}
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <button
-              onClick={handleDownloadPDF}
-              disabled={isGeneratingPDF || pages.length === 0}
-              style={{
-                backgroundColor: isGeneratingPDF ? '#ccc' : '#8B4513',
-                color: 'white',
-                border: 'none',
-                padding: '10px 20px',
-                borderRadius: '6px',
-                cursor: isGeneratingPDF ? 'not-allowed' : 'pointer',
-                fontSize: '14px',
-                fontWeight: '500',
-                transition: 'background-color 0.2s'
-              }}
-              onMouseEnter={(e) => {
-                if (!isGeneratingPDF && pages.length > 0) {
-                  e.currentTarget.style.backgroundColor = '#6d3410';
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (!isGeneratingPDF && pages.length > 0) {
-                  e.currentTarget.style.backgroundColor = '#8B4513';
-                }
-              }}
-            >
-              {isGeneratingPDF ? t('generating') : t('downloadPDF')}
-            </button>
-            <Link 
-              href={`/${parent}/gallery`} 
-              style={{ 
-                color: '#8B4513',
-                textDecoration: 'none',
-                fontSize: '16px',
-                fontWeight: '500'
-              }}
-            >
-              {t('viewGallery')}
+        <div className="top-bar-content book-header">
+          <div className="book-header-row">
+            <Link href={`/${parent}`} className="logo back-link-book">
+              ← {t('backToChapters')}
             </Link>
-            <LanguageSelector />
+            <div className="book-header-actions">
+              <button
+                onClick={handleDownloadPDF}
+                disabled={isGeneratingPDF || pages.length === 0}
+                className="pdf-download-btn"
+              >
+                {isGeneratingPDF ? t('generating') : t('downloadPDF')}
+              </button>
+              <LanguageSelector />
+            </div>
+          </div>
+          <div className="book-title book-title-center">
+            {parentName.charAt(0).toUpperCase() + parentName.slice(1)}{t('bookTitle')}
           </div>
         </div>
       </header>
 
       <main style={{ 
-        padding: '20px',
+        padding: '8px',
         minHeight: 'calc(100vh - 80px)',
         display: 'flex',
         flexDirection: 'column',
@@ -436,33 +408,37 @@ export default function BookPage({ params }: { params: Promise<{ parent: string 
             <div style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '12px',
+              gap: '8px',
               marginBottom: '12px',
               flexWrap: 'wrap',
-              justifyContent: 'center'
+              justifyContent: 'center',
+              width: '100%',
+              maxWidth: '600px'
             }}>
               <button
                 onClick={goToPreviousPage}
                 disabled={currentPageIndex === 0}
                 style={{
-                  padding: '10px 16px',
-                  fontSize: '14px',
+                  padding: '8px 12px',
+                  fontSize: '13px',
                   fontWeight: '500',
                   backgroundColor: currentPageIndex === 0 ? '#e0e0e0' : '#8B4513',
                   color: currentPageIndex === 0 ? '#999' : 'white',
                   border: 'none',
                   borderRadius: '8px',
-                  cursor: currentPageIndex === 0 ? 'not-allowed' : 'pointer'
+                  cursor: currentPageIndex === 0 ? 'not-allowed' : 'pointer',
+                  flex: '0 0 auto'
                 }}
               >
                 ← {t('previous')}
               </button>
 
               <div style={{
-                fontSize: '14px',
+                fontSize: '13px',
                 color: '#2C1810',
                 fontWeight: '500',
-                whiteSpace: 'nowrap'
+                whiteSpace: 'nowrap',
+                flex: '0 0 auto'
               }}>
                 {t('page')} {currentPageIndex + 1} {t('of')} {pages.length}
               </div>
@@ -471,14 +447,15 @@ export default function BookPage({ params }: { params: Promise<{ parent: string 
                 onClick={goToNextPage}
                 disabled={currentPageIndex === pages.length - 1}
                 style={{
-                  padding: '10px 16px',
-                  fontSize: '14px',
+                  padding: '8px 12px',
+                  fontSize: '13px',
                   fontWeight: '500',
                   backgroundColor: currentPageIndex === pages.length - 1 ? '#e0e0e0' : '#8B4513',
                   color: currentPageIndex === pages.length - 1 ? '#999' : 'white',
                   border: 'none',
                   borderRadius: '8px',
-                  cursor: currentPageIndex === pages.length - 1 ? 'not-allowed' : 'pointer'
+                  cursor: currentPageIndex === pages.length - 1 ? 'not-allowed' : 'pointer',
+                  flex: '0 0 auto'
                 }}
               >
                 {t('next')} →

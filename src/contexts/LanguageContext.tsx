@@ -17,7 +17,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     // Load language from localStorage
     const saved = localStorage.getItem('lifeStories_language') as Language;
-    if (saved && ['en', 'de', 'it'].includes(saved)) {
+    if (saved && ['en', 'de', 'it', 'no', 'et', 'uk'].includes(saved)) {
       setLanguageState(saved);
     }
     setIsLoaded(true);
