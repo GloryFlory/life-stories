@@ -11,31 +11,6 @@ export default function Home() {
   const { language } = useLanguage();
   const t = (key: string) => getTranslation(language, key);
 
-  const getCardText = (key: string) => {
-    if (language === 'en') {
-      if (key === 'momTitle') return "Mom's Story";
-      if (key === 'dadTitle') return "Dad's Story";
-      if (key === 'description') return "Share your memories, wisdom, and life experiences with the ones you love most";
-      if (key === 'button') return "Start Sharing";
-    } else if (language === 'de') {
-      if (key === 'momTitle') return "Mamas Geschichte";
-      if (key === 'dadTitle') return "Papas Geschichte";
-      if (key === 'description') return "Teile deine Erinnerungen, Weisheit und Lebenserfahrungen mit denen, die du am meisten liebst";
-      if (key === 'button') return "Beginne zu teilen";
-    } else if (language === 'no') {
-      if (key === 'momTitle') return "Mammas Historie";
-      if (key === 'dadTitle') return "Pappas Historie";
-      if (key === 'description') return "Del dine minner, visdom og livserfaringer med de du elsker mest";
-      if (key === 'button') return "Begynn å dele";
-    } else { // Italian
-      if (key === 'momTitle') return "La Storia della Mamma";
-      if (key === 'dadTitle') return "La Storia del Papà";
-      if (key === 'description') return "Condividi i tuoi ricordi, la tua saggezza e le tue esperienze di vita con le persone che ami di più";
-      if (key === 'button') return "Inizia a Condividere";
-    }
-    return '';
-  };
-
   return (
     <div className="home-container">
       <div className="language-selector-wrapper">
@@ -60,10 +35,10 @@ export default function Home() {
         <div className="parent-grid">
           <Link href="/mom" className="parent-card mom">
             <div className="card-accent mom"></div>
-            <h2 className="card-title">{getCardText('momTitle')}</h2>
-            <p className="card-description">{getCardText('description')}</p>
+            <h2 className="card-title">{t('momCard')}</h2>
+            <p className="card-description">{t('momDescription')}</p>
             <span className="card-link">
-              <span>{getCardText('button')}</span>
+              <span>{t('beginButton')}</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M6 3L11 8L6 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
@@ -72,10 +47,10 @@ export default function Home() {
 
           <Link href="/dad" className="parent-card dad">
             <div className="card-accent dad"></div>
-            <h2 className="card-title">{getCardText('dadTitle')}</h2>
-            <p className="card-description">{getCardText('description')}</p>
+            <h2 className="card-title">{t('dadCard')}</h2>
+            <p className="card-description">{t('dadDescription')}</p>
             <span className="card-link">
-              <span>{getCardText('button')}</span>
+              <span>{t('beginButton')}</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M6 3L11 8L6 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>

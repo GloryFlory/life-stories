@@ -343,7 +343,7 @@ export const questionTranslations: Record<Language, Record<string, string[]>> = 
       'Quale parte del tuo lavoro ti ha portato significato o gioia?',
       'Ti sei mai sentito/a chiamato/a in una direzione particolare?',
       'Com\'erano i tuoi mentori?',
-      'Cosa hai imparato sulla leadership, il lavoro di squadra o la responsabilità?',
+      'Cosa hai imparato sulla leadership, il lavoro di squadra o la responsabilabilità?',
       'Qual è una sfida lavorativa che ti ha insegnato qualcosa di importante?',
       'Se potessi tornare indietro, sceglieresti lo stesso percorso professionale? Perché sì o perché no?'
     ],
@@ -531,9 +531,288 @@ export const questionTranslations: Record<Language, Record<string, string[]>> = 
       'Del et bilde fra et "før og etter"-øyeblikk i livet ditt.',
       'Last opp et bilde som representerer hvem du er i dag.'
     ]
+  },
+  et: {
+    roots: [
+      'Kus ja millal sa sündisid ning milline oli sinu kodulinna atmosfäär?',
+      'Milline on sinu varaseim mälestus oma vanematest?',
+      'Mida sa tead oma vanavanematest või vanavanavanematest?',
+      'Milliseid lugusid, traditsioone või ütlusi sinu peres edasi anti?',
+      'Kas oli mõni pererituaal, tähistamine või rutiin, mis sulle palju tähendas?',
+      'Millised kolm sõna kirjeldavad kõige paremini perekonda, kuhu sa sündisid?',
+      'Mis tegi sinu pere omamoodi unikaalseks, ebatavaliseks või võluvaks?',
+      'Kes pani sind lapsena end turvaliselt tundma ja kuidas?'
+    ],
+    childhood: [
+      'Mis on üks sinu õnnelikumaid lapsepõlvemälestusi?',
+      'Milline nägi välja tavaline päev sinu lapsepõlves—hommikust õhtuni?',
+      'Mis oli lapsena sinu lemmikkoht mängimiseks või peitmiseks?',
+      'Millised toidud, lõhnad või helid toovad sind koheselt tagasi lapsepõlve?',
+      'Kes olid need inimesed, kes kujundasid sinu lapsepõlve väikesel või suurel määral?',
+      'Mis oli sinu lemmikmänguasi, mäng või tegevus?',
+      'Kas oli hetk, mil sattusid pahandustesse, kuid nüüd saad selle üle naerda?',
+      'Mis sind lapsena hirmutas ja kuidas sa sellega toime tulid?',
+      'Millist nõu annaksid 7-aastasele iseendale?'
+    ],
+    teenage: [
+      'Milline teismeline sa olid—vaikne, mässumeelne, uudishimulik, seltskondlik?',
+      'Kes olid sinu lähedasemad sõbrad ja milliseid seiklusi te jagasite?',
+      'Kuidas koolis läks? Kas oli õpetajaid, kes jätsid jälje?',
+      'Millised hobid, klubid või spordialad defineerisid sinu teismeiga?',
+      'Millised laulud, bändid või artistid kujundasid sinu teismelise identiteeti?',
+      'Mis oli midagi, mida sa selles vanuses meeleheitlikult soovisid?',
+      'Mis on teismeliseea mälestus, mis paneb sind siiani naeratama?',
+      'Kas oli hetk, mil tundsid end valesti mõistetuna—või tõeliselt mõistetuna?',
+      'Kuidas sa kujutasid ette oma täiskasvanuelu tol ajal?'
+    ],
+    'young-adult': [
+      'Milline oli sinu esimene kodu või korter?',
+      'Kuidas tundus iseseisvus varases täiskasvanueas?',
+      'Mis olid sinu suurimad unistused või hirmud kahekümnendates?',
+      'Mis on otsus, mille tegid varases täiskasvanueas ja mis muutis sinu elu?',
+      'Millised seiklused (suured või väikesed) kujundasid seda, kelleks sa said?',
+      'Kas käisid ülikoolis või koolitusel? Mis sellest ajast meelde on jäänud?',
+      'Kes olid olulised inimesed või sõprussuhted selles faasis?',
+      'Milline oli sinu suhe rahaga tol ajal?'
+    ],
+    love: [
+      'Kuidas sa kohtusid oma partneriga ja millised olid sinu esimesed muljed?',
+      'Mida mäletad kõige eredamalt oma suhte algusaegadest?',
+      'Milline oli teie esimene kohting?',
+      'Millal teadsid, et tema on "see õige"?',
+      'Milliseid väikeseid armastuse žeste sa kõige rohkem hindad?',
+      'Millised väärtused hoiavad teie suhet koos?',
+      'Milliseid väljakutseid olete paarina ületanud?',
+      'Mis on üks naljakas, armas või ootamatu mälestus teie suhtest?',
+      'Millist nõu annaksid armastava partnerluse valimiseks või hoidmiseks?'
+    ],
+    wedding: [
+      'Kui teil oli pulm või tseremoonia, mis sellest päevast esile tõuseb?',
+      'Milline oli tähistamise atmosfäär või emotsionaalne toon?',
+      'Milline hetk sellest päevast tundub sulle siiani elav?',
+      'Kas oli midagi, mis läks "valesti", kuid millest sai suurepärane lugu?'
+    ],
+    parenthood: [
+      'Kuidas tundsid end, kui said teada, et saad lapsevanemaks?',
+      'Kirjelda päeva, mil iga laps sinu ellu tuli.',
+      'Mis üllatas sind lapsevanemaks olemise juures kõige rohkem?',
+      'Millised olid mõned lemmikud pererutiinid, mida lõid?',
+      'Mida leidsid lapsevanemaks olemises väljakutsuvana ja mis sind aitas?',
+      'Mida õppisid enda kohta lapsevanemaks saades?',
+      'Milliseid väärtusi lootsid oma lastele õpetada?',
+      'Mis on üks sinu naljakamaid lapsevanema lugusid?',
+      'Mis on üks sinu hellemaid lapsevanema mälestusi?'
+    ],
+    work: [
+      'Mis oli sinu esimene töökoht ja kuidas see sind kujundas?',
+      'Millise tööalase hetke üle oled kõige uhkem?',
+      'Milline osa sinu tööst tõi sulle tähendust või rõõmu?',
+      'Kas tundsid kunagi kutsumust kindlas suunas?',
+      'Millised olid sinu mentorid?',
+      'Mida õppisid juhtimise, meeskonnatöö või vastutuse kohta?',
+      'Mis on tööalane väljakutse, mis õpetas sulle midagi olulist?',
+      'Kui saaksid minna tagasi, kas valiksid sama karjääritee? Miks või miks mitte?'
+    ],
+    challenges: [
+      'Mis oli üks raskemaid perioode sinu elus?',
+      'Kuidas sa sellest läbi tulid—mis aitas sul ellu jääda, kasvada või kohaneda?',
+      'Kas oli hetk, mil mõistsid: "Ma pean midagi muutma"?',
+      'Mis on midagi, mida pidasid kunagi katastroofiks, kuid mis osutus õnnistuseks?',
+      'Mida on sinu võitlused sulle õpetanud tugevuse, vastupidavuse või identiteedi kohta?',
+      'Kui saaksid lohutada oma mineviku mina raskel ajal, mida sa ütleksid?'
+    ],
+    joy: [
+      'Millised hobid või kired on sulle kõige rohkem rõõmu toonud?',
+      'Mis on lihtne igapäevane nauding, mis alati tuju tõstab?',
+      'Mida teed, kui soovid lõõgastuda või end maandada?',
+      'Milline tegevus paneb sind ajataju kaotama?',
+      'Kas sinu hobid on aja jooksul muutunud? Mis jäi? Mis hääbus?',
+      'Mis on midagi, mida oled alati tahtnud proovida, kuid pole veel teinud?'
+    ],
+    lessons: [
+      'Millised väärtused või põhimõtted on sind elus kõige tugevamalt juhtinud?',
+      'Mis on parim nõuanne, mida oled kunagi saanud?',
+      'Millist uskumust oled aastate jooksul muutnud?',
+      'Mille pärast soovid, et oleksid vähem muretsenud?',
+      'Mida tead nüüd, mida soovisid, et oleksid teadnud 25-aastaselt?',
+      'Milline näeb sinu jaoks välja tähendusrikas elu?',
+      'Mille eest oled kõige tänulikum?'
+    ],
+    messages: [
+      'Mida soovid, et sinu lapsed teaksid sellest, kes sa tegelikult oled?',
+      'Milliseid väärtusi soovid kõige rohkem edasi anda?',
+      'Millised unistused on sul oma lastele ja lastelastele?',
+      'Mida loodad, et sinu pere sinust mäletab?',
+      'Kui saaksid öelda tulevastele põlvedele vaid ühe asja, mis see oleks?',
+      'Mida ütleksid oma nooremale minale, kui saaksid?'
+    ],
+    photos: [
+      'Vali foto oma lapsepõlvest ja räägi selle lugu.',
+      'Jaga fotot, mis paneb sind iga kord naeratama, kui seda näed.',
+      'Lae üles foto pöördepunktist oma elus.',
+      'Vali foto kellegagi, keda sa kunagi ei unusta.',
+      'Jaga fotot, mis esindab uhket hetke.',
+      'Lae üles foto kohast, millel on eriline tähendus.',
+      'Vali foto, mis näitab sind tegemas seda, mida armastad.',
+      'Jaga fotot ootamatu rõõmu hetkest.',
+      'Lae üles foto, mis meenutab sulle kodu.',
+      'Vali foto, mis räägib loo ilma sõnadeta.',
+      'Jaga fotot seiklusest või reisist.',
+      'Lae üles foto, mis jäädvustab traditsiooni või tähistamist.',
+      'Vali foto, mis näitab armastust tegevuses.',
+      'Jaga fotot "enne ja pärast" hetkest oma elus.',
+      'Lae üles foto, mis esindab seda, kes sa täna oled.'
+    ]
+  },
+  
+  uk: {
+    roots: [
+      'Де і коли ви народилися, і якою була атмосфера вашого рідного міста?',
+      'Який найперший спогад у вас про ваших батьків?',
+      'Що ви знаєте про своїх бабусь і дідусів або прабабусь і прадідусів?',
+      'Які історії, традиції чи прислів\'я передавалися через вашу сім\'ю?',
+      'Чи був сімейний ритуал, свято чи традиція, які багато для вас значили?',
+      'Які три слова найкраще описують сім\'ю, в якій ви народилися?',
+      'Що робило вашу сім\'ю унікальною, незвичайною чи чарівною по-своєму?',
+      'Хто дарував вам відчуття безпеки в дитинстві, і як?'
+    ],
+    childhood: [
+      'Який один з ваших найщасливіших спогадів дитинства?',
+      'Як виглядав звичайний день у вашому дитинстві—з ранку до вечора?',
+      'Яке було ваше улюблене місце для ігор чи ховання в дитинстві?',
+      'Які їжа, запахи чи звуки миттєво повертають вас до дитинства?',
+      'Хто були люди, які формували ваше дитинство, малими чи великими способами?',
+      'Яка була ваша улюблена іграшка, гра чи заняття?',
+      'Чи був момент, коли ви потрапили в біду, і тепер можете посміятися з цього?',
+      'Що вас лякало в дитинстві, і як ви з цим справлялися?',
+      'Яку пораду ви б дали 7-річній версії себе?'
+    ],
+    teenage: [
+      'Яким підлітком ви були—тихим, бунтівним, допитливим, товариським?',
+      'Хто були ваші найближчі друзі, і якими пригодами ви ділилися?',
+      'Якою була для вас школа? Чи були вчителі, які залишили слід?',
+      'Які хобі, клуби чи спорт визначали ваші підліткові роки?',
+      'Яка музика, мода чи культурні тренди були частиною вашого підліткового життя?',
+      'Який був ваш перший досвід самостійності чи свободи?',
+      'Які мрії чи амбіції були у вас як у підлітка?',
+      'Чи був хтось, у кого ви були закохані або захоплювалися?',
+      'Що ви хотіли б, щоб ваша підліткова версія знала?'
+    ],
+    'young-adult': [
+      'Що було вашою першою роботою, і що вона вас навчила?',
+      'Якою була ваша перша квартира чи будинок?',
+      'Який період у ваші 20 роки був найбільш формуючим?',
+      'Чи були важливі рішення, які ви прийняли у ваші 20 роки?',
+      'Хто були важливі друзі чи наставники в цей період?',
+      'Які подорожі, переїзди чи нові починання сталися?',
+      'Які помилки ви зробили, з яких багато навчилися?',
+      'Які моменти зробили вас гордими чи впевненими?',
+      'Якою була ваша перша велика любов або серйозні стосунки?'
+    ],
+    love: [
+      'Коли ви вперше закохалися, і що це було за відчуття?',
+      'Як ви зустріли свого партнера/чоловіка/дружину?',
+      'Коли ви зрозуміли, що це той самий/та сама?',
+      'Якою була ваша пропозиція або вирішення одружитися?',
+      'Що ви пам\'ятаєте про ваше весілля або обітницю?',
+      'Які були виклики у ваших стосунках і як ви їх подолали?',
+      'Що вас найбільше здивувало у шлюбі чи партнерстві?',
+      'Який найкращий романтичний момент ви пережили разом?',
+      'Яку найважливішу річ ви дізналися про кохання?'
+    ],
+    wedding: [
+      'Де і коли відбулося ваше весілля або обітниця?',
+      'Яким був найособливіший момент вашого весілля?',
+      'Хто був присутній, і що це для вас значило?',
+      'Які вам пам\'ятаються деталі з того дня?',
+      'Чи були несподіванки або незаплановані моменти?',
+      'Як ви відчували себе в той день?',
+      'Яку пораду ви дали під час своїх обітниць?',
+      'Що зробило цей день особливим для вас?'
+    ],
+    parenthood: [
+      'Що ви відчували, коли дізналися, що станете батьком/матір\'ю?',
+      'Якими були перші дні батьківства?',
+      'Який ваш найбільш дорогоцінний сімейний спогад?',
+      'Яким був звичайний день у житті вашої сім\'ї?',
+      'Які традиції ви створили зі своєю сім\'єю?',
+      'Як змінилося ваше життя, коли у вас з\'явилися діти?',
+      'Який найсміховинніший чи найбільш хаотичний сімейний момент?',
+      'Що ви хотіли б, щоб ваші діти пам\'ятали про своє виховання?',
+      'Який найбільший урок ви вивчили від своїх дітей?'
+    ],
+    work: [
+      'Яким було ваше перше справжнє заняття чи кар\'єра?',
+      'Що призвело вас на цей шлях—пристрасть, необхідність чи випадковість?',
+      'Яким був найскладніший робочий день, який ви пам\'ятаєте?',
+      'Якими були ваші найбільші досягнення чи прориви?',
+      'Хто були наставники чи колеги, які допомогли сформувати ваш шлях?',
+      'Чи були моменти, коли ви хотіли все кинути, і чому?',
+      'Що приносило вам найбільше задоволення у вашій роботі?',
+      'Яку найважливішу професійну пораду ви коли-небудь отримували?',
+      'Що б ви зробили інакше у своїй кар\'єрі, якби могли?'
+    ],
+    challenges: [
+      'Який був найскладніший період у вашому житті?',
+      'Як ви справлялися з втратою, горем чи розчаруванням?',
+      'Чи був час, коли ви відчували себе зламаним, але знайшли спосіб продовжити?',
+      'Хто або що допомогло вам пережити важкі часи?',
+      'Чи є помилка чи невдача, яка навчила вас чогось важливого?',
+      'Як невдачі чи виклики сформували вас?',
+      'Якою є найхоробрішою річчю, яку ви коли-небудь робили?',
+      'Чи є щось, що ви побороли, чим пишаєтеся?',
+      'Що б ви сказали комусь, хто переживає важкі часи?'
+    ],
+    joy: [
+      'Який момент у вашому житті приніс вам найбільшу радість?',
+      'Яка найвеселіша пригода чи подорож у вас була?',
+      'Хто люди, які найбільше сміються з вами?',
+      'Яке свято чи подія вам найбільше подобається святкувати?',
+      'Який найщасливіший сюрприз ви коли-небудь отримали чи зробили?',
+      'Яка маленька річ у житті приносить вам найбільшу радість?',
+      'Чи є місце, яке завжди дарує вам відчуття щастя?',
+      'Що змушує вас сміятися до сліз?',
+      'Який найкращий день у вашому житті досі?'
+    ],
+    lessons: [
+      'Який найважливіший урок ви вивчили у житті?',
+      'Чи є щось, чого ви хотіли б, щоб знали раніше?',
+      'Що ви вивчили про себе з часом?',
+      'Яку найкращу пораду вам коли-небудь давали?',
+      'Що ви знаєте зараз, чого не знали у 20 років?',
+      'Якими словами мудрості ви хотіли б поділитися?',
+      'Що найбільше сформувало ваші цінності чи переконання?',
+      'Чи є правда про життя, яку ви прийняли?',
+      'Яким є найважливішим для вас у житті?'
+    ],
+    messages: [
+      'Що ви хочете, щоб ваші діти знали про вас?',
+      'Які слова надії ви хочете залишити майбутнім поколінням?',
+      'Що б ви сказали своєму молодшому я?',
+      'Яку мрію ви хочете, щоб ваші онуки здійснили?',
+      'Що ви хочете, щоб пам\'ятали про ваше життя?',
+      'Які цінності найважливіші для вас передати?',
+      'Чи є сімейна історія чи традиція, яку хочете зберегти?',
+      'Що приносить вам найбільше задоволення, коли ви озираєтеся?',
+      'Яке останнє послання кохання чи мудрості ви хочете залишити?'
+    ],
+    photos: [
+      'Яка історія за цією фотографією?',
+      'Де і коли це було зроблено?',
+      'Хто на цій фотографії і що вони для вас значать?',
+      'Що ви пам\'ятаєте про цей день?',
+      'Чому це фото особливе для вас?',
+      'Що відбувалося у вашому житті в той час?',
+      'Чи є щось несподіване чи приховане в цьому фото?',
+      'Як ви відчували себе в той момент?'
+    ]
   }
 };
 
 export function getQuestions(language: Language, chapterId: string): string[] {
-  return questionTranslations[language][chapterId] || questionTranslations.en[chapterId] || [];
+  const translations = questionTranslations[language];
+  if (!translations) {
+    return questionTranslations.en[chapterId] || [];
+  }
+  return translations[chapterId] || questionTranslations.en[chapterId] || [];
 }

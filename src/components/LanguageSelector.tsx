@@ -8,7 +8,9 @@ const languages: { code: Language; label: string; flag: string }[] = [
   { code: 'en', label: 'English', flag: '🇬🇧' },
   { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
   { code: 'it', label: 'Italiano', flag: '🇮🇹' },
-  { code: 'no', label: 'Norsk', flag: '🇳🇴' }
+  { code: 'no', label: 'Norsk', flag: '🇳🇴' },
+  { code: 'et', label: 'Eesti', flag: '🇪🇪' },
+  { code: 'uk', label: 'Українська', flag: '🇺🇦' }
 ];
 
 export function LanguageSelector() {
