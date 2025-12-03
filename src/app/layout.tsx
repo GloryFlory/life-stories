@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Italiana, Lora } from "next/font/google";
 import { Providers } from "@/components/Providers";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const italiana = Italiana({
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
